@@ -1,38 +1,90 @@
-.App {
+.main-app{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #cc66ff 0%, pink,#ffffcc ,rgb(7, 218, 207));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center-app{
+  width: 25%;
+  height: 80vh;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
   color: white;
+  background: transparent;
+  background-color: rgb(4, 170, 162);
+  padding: 6px 0px 2px 0px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid rgb(4, 170, 162);
+  outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  min-height: 40px;
+  width: 48px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: rgb(4, 170, 162);
+  color: aliceblue;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background-color:#8566aa;
+  cursor: pointer;
+}
+ol{
+  margin-top: 30px;
+}
+ol li {
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  color: rgb(4, 170, 162);
+  text-transform: capitalize;
+}
+.todo-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo-main svg{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 170, 162);
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow:  5px 5px 15px -5px rgba(0, 0, 0, 0.3) ;
+}
+.todo-main svg:hover{
+  background-color: red;
+  cursor: pointer;
 }
